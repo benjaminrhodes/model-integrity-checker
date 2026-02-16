@@ -20,6 +20,9 @@ model-checker = "model_integrity_checker.cli:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py39"
